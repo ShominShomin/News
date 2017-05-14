@@ -8,8 +8,8 @@ from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 
 
 def post_list(request):
-    post_list = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    paginator = Paginator(post_list, 2) # page bolgon huvaah
+    post_list = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
+    paginator = Paginator(post_list, 5) # page bolgon huvaah
     page = request.GET.get('page', 1)
     
     posts = paginator.page(page)
