@@ -10,7 +10,7 @@
           <h5><span class="w3-opacity">{{ post.published_date }}</span></h5>
         </div>
         <div class="w3-container">
-          <p>{{ post.text|slice:":255"}}...</p>
+          <p>{{ post.text|slice:":255"|safe}}...</p>
           <div class="w3-row">
             <div class="w3-col m8 s12">
               <p><a href="{% url 'post_detail' pk=post.pk %}"><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></a></p>

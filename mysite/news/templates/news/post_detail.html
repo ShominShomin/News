@@ -14,9 +14,8 @@
         <div class="w3-card-4 w3-margin w3-white">
         <div class="w3-container">
           <h3>{{ post.title }}</h3>
-        </div>
-        <article class="w3-container">
-          <p>{{ post.text }}</p>
+        
+          <p>{{ post.text|safe }}</p>
         </article>
       </div>
     </div>
