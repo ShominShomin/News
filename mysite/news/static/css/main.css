@@ -22,6 +22,11 @@ body {
     padding-left: 0px;
 }
 
+h3{
+    font-family: "Raleway", sans-serif;
+    color: rgb(66,139,202);
+}
+
 .page-header {
     background-color: rgb(66,139,202);
     margin-top: -10;
