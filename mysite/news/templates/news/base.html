@@ -52,8 +52,9 @@
             }(document, 'script', 'facebook-jssdk'));</script>
             <div class="page-header">
                 {% if user.is_authenticated %}
-                <a href="{% url 'post_new' %}" class="top-button"><span class="glyphicon glyphicon-plus"></span></a>
-                <p class="top-menu">{{ user.username }} (<a href="{% url 'logout' %}">Sign Out</a>)</p>
+                <a href="{% url 'logout' %}" class="top-button"><span class="glyphicon glyphicon-off"></span></a>
+                <p class="top-menu">You are logged in as [{{ user.username }}]</p>
+                <a href="{% url 'post_new' %}" class="top-button"><span class="glyphicon glyphicon-pencil"></span></a>
                 {% else %}
                 <a href="{% url 'login' %}" class="top-button"><span class="glyphicon glyphicon-lock"></span></a> {% endif %}
             </div>
