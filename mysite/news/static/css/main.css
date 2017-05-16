@@ -83,6 +83,15 @@ h3{
     margin-top: -30px;
 }
 
+.throwRightSimpler {
+    margin-left: 15px;
+}
+
 .no-decs{
     color:#ffffff;
+}
+
+.commentFix{
+    margin-top: -25px;
+    margin-left: 130;
 }
